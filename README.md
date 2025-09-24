@@ -2,7 +2,7 @@
 
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-Apache--2.0-green)
+[![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
 **kariSpark** is a command-line interface (CLI) tool for downloading, uploading, and transferring programs between microcontrollers.  
 It is designed to make working with embedded devices simple and efficient.  
