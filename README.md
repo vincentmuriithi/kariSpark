@@ -24,5 +24,6 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 
 ## 🚀 Installation
 
-Precompiled binaries will be available on [GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases).  
+Download the latest release from the [GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases).  
+Add it to your system PATH to use `kariSpark` globally.
 
