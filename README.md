@@ -45,3 +45,54 @@ Used to detect the connected boards in your pc.
 ```bash
 kari detect
 ```
+
+### kari upload
+Used to upload programs to connected boards. Requires the port to be specified when flashing to single board but also supports parallel flashing for uploading multiple boards.
+For single board you use:
+```bash
+kari upload port <options>
+```
+Example:
+```bash
+kari upload COM3 --board uno --programmer arduino --dir . 
+```
+For multiple board uploading also known as parallel flashing is as:
+```bash
+kari upload --parallel <options>
+```
+In parallel flashing port is not needed and if you pass it it will be ignored. 
+This command usage is as follows:
+```bash
+Arguments:
+[PORT]
+Options:
+  -b, --board <BOARD>
+  -p, --programmer <PROGRAMMER>
+  -d, --dir <DIR>
+      --parallel
+  -h, --help                     Print help
+  ```
+
+  ### kari download
+  Used to download programs to connected boards. Requires the port to be specified when downloading the program with an exception only when using usbasp as the programmer.
+  It also allows for one to specify a directory where the downloaded program will be saved. If not saved it will be saved in the temp directory.
+  
+  It's signature is as follows:
+  ```bash
+  kari download port <options>
+  ```
+  Example:
+  ```bash
+  kari /dev/ttyACM0 -b mega2560 --programmer arduino  -d "./downloaded_program"
+  ```
+  This command usage is as follows:
+  ```bash
+  Arguments:
+  [PORT]
+
+Options:
+  -b, --board <BOARD>
+  -d, --dir <DIR>
+  -p, --programmer <PROGRAMMER>
+  -h, --help                     Print help
+  ```
