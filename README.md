@@ -96,3 +96,66 @@ Options:
   -p, --programmer <PROGRAMMER>
   -h, --help                     Print help
   ```
+
+  ### kari transfer
+  This is the most powerful and unique feature of ***kariSpark***.
+  It's used to transfer program between boards of same MCU architecture e.g atmega328 to atmega328. It requires the source port and target port to be specified when transferring programs between two boards.
+
+  It also supports multiple board program transfer also know as parallel transfer. It works by single source multiple targets strategy.
+
+  The term parallel isn't just sugar-coating, but an explanation of how the transfer works. **kariSpark** spawns multiple threads in which each transfer/upload during the transaction has its own thread hence saving transfer and upload times when transferring to multiple devices. Hence transfers occur concurrently instead of waiting for one board to finish before starting the next.
+
+  Two boards transfer signature is as follows:
+  ```bash
+  kari transfer source_port target_port <options>
+  ```
+  Example:
+  ```bash
+  kari transfer COM3 COM4 -b uno -p arduino 
+  ```
+  In parallel transfer you only need specify the ***source_port*** only.
+  ```bash
+  kari source_port --parallel <options>
+  ```
+  Example:
+  ```bash
+  kari transfer COM14 --parallel --programmer arduino --board leonardo
+  ```
+This command usage is as follows:
+```bash
+Arguments:
+  [SOURCE_PORT]
+  [TARGET_PORT]
+
+Options:
+  -b, --board <BOARD>
+  -p, --programmer <PROGRAMMER>
+      --parallel
+  -h, --help                     Print help
+  ```
+
+### kari verify
+Used to verify the correctness of a program in a given microcontroller and also comparing if a given saved program file is same as one running in a given MCU.
+It's signature is as follows;
+```bash
+kari verify port <options>
+```
+Example:
+```bash
+kari verify COM15 -b attiny85 -p arduino --file ./saved_program.hex
+```
+You also just pass a directory to file and it will automatically search in that directory for the saved program with the name ***temp_program.hex*** for AVR MCUs. If you don't give the path   or file it will check it in the temp directory.
+
+The port argument is optional when using usbasp programmer.
+
+This command usage is as follows:
+```bash
+Arguments:
+  [PORT]
+
+Options:
+  -f, --file <FILE>
+  -b, --board <BOARD>            [default: uno]
+  -p, --programmer <PROGRAMMER>  [default: arduino]
+  -h, --help                     Print help
+  ```
