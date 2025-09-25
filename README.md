@@ -27,6 +27,11 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 Download the latest release from the [GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases).  
 Add it to your system PATH to use `kariSpark` globally.
 
+Check installation:
+```bash
+kari --version
+```
+
 ## 🛠 Command Reference
 ```bash
 # Used for generating a kari.toml config file
