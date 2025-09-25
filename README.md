@@ -45,7 +45,7 @@ kari download port <options>
 kari transfer <options>
 
 # Used to verify the correctness and compare a saved program to one running in the given MCU
-kari verify
+kari verify <options>
 ```
 
 
