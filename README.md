@@ -58,7 +58,7 @@ kari verify <options>
 ### kari doctor
 Used to inspect your environment and install required dependencies to get you started on **kariSpark**.  
 Syntax:
-```bash
+```bas
 kari doctor
 ```
 
