@@ -56,25 +56,28 @@ kari verify <options>
 
 ## 🔨 Usage
 ### kari doctor
-Used to inspect your environment and install required dependencies to get you started on **kariSpark**.
+Used to inspect your environment and install required dependencies to get you started on **kariSpark**.  
+Syntax:
 ```bash
 kari doctor
 ```
 
 ### kari init
-Used to generate **kari.toml** config file for use with **kariSpark**.
+Used to generate **kari.toml** config file for use with **kariSpark**.  
+Syntax:
 ```bash
 kari init
 ```
 
 ### kari detect
-Used to detect the connected boards in your pc.
+Used to detect the connected boards in your pc.  
+Syntax:
 ```bash
 kari detect
 ```
 
 ### kari upload
-Used to upload programs to connected boards. Requires the port to be specified when flashing to single board but also supports parallel flashing for uploading multiple boards.
+Used to upload programs to connected boards. Requires the port to be specified when flashing to single board but also supports parallel flashing for uploading multiple boards.  
 For single board you use:
 ```bash
 kari upload port <options>
@@ -104,7 +107,7 @@ Options:
   Used to download programs to connected boards. Requires the port to be specified when downloading the program with an exception only when using usbasp as the programmer.
   It also allows for one to specify a directory where the downloaded program will be saved. If not saved it will be saved in the temp directory.
   
-  It's signature is as follows:
+  Syntax:
   ```bash
   kari download port <options>
   ```
@@ -163,7 +166,7 @@ Options:
 
 ### kari verify
 Used to verify the correctness of a program in a given microcontroller and also comparing if a given saved program file is same as one running in a given MCU.
-It's signature is as follows;
+Syntax:
 ```bash
 kari verify port <options>
 ```
