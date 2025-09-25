@@ -193,6 +193,23 @@ Options:
 
 kariSpark is part of the kari ecosystem.
 
+## 📋 Supported Board Names
+
+When using `kariSpark` commands, you can specify your board using any of the following aliases.  
+All names on the left resolve to the canonical MCU on the right:
+
+| Aliases | Resolved MCU |
+|---------|--------------|
+| `uno`, `nano`, `328p`, `atmega328p`, `atmega328`, `328` | **ATmega328P** |
+| `mega`, `atmega2560`, `mega2560`, `2560` | **ATmega2560** |
+| `mega1280`, `1280`, `atmega1280`, `m1280` | **ATmega1280** |
+| `leonardo`, `micro`, `promicro`, `32u4`, `atmega32u4`, `m32u4` | **ATmega32u4** |
+| `nanoevery`, `4809`, `atmega4809`, `m4809` | **ATmega4809** |
+| `mini`, `168`, `atmega168`, `m168` | **ATmega168** |
+| `attiny85`, `tiny85`, `t85` | **ATtiny85** |
+| `attiny13`, `tiny13`, `t13` | **ATtiny13** |
+
+
 ## 📜 License
 This library is licensed under the Apache License 2.0.
 See the full license here: [Apache-2.0 License.](https://opensource.org/licenses/Apache-2.0)
@@ -201,3 +218,4 @@ See the full license here: [Apache-2.0 License.](https://opensource.org/licenses
 **Vincent Muriithi Karimi**  
 GitHub: [vincentmuriithi](https://github.com/vincentmuriithi)  
 Email: kari.clientdesk@gmail.com 
+
