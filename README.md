@@ -27,6 +27,28 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 Download the latest release from the [GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases).  
 Add it to your system PATH to use `kariSpark` globally.
 
+## 🛠 Command Reference
+```bash
+# Used for generating a kari.toml config file
+kari init
+
+# Used for detecting the available connected boards
+kari detect
+
+# Used to upload the specified program
+kari upload port <options>
+
+# Used to download a program from the specified board
+kari download port <options>
+
+# Used to transfer program between boards
+kari transfer <options>
+
+# Used to verify the correctness and compare a saved program to one running in the given MCU
+kari verify
+```
+
+
 ## 🔨 Usage
 ### kari doctor
 Used to inspect your environment and install required dependencies to get you started on **kariSpark**.
@@ -159,6 +181,8 @@ Options:
   -p, --programmer <PROGRAMMER>  [default: arduino]
   -h, --help                     Print help
   ```
+
+kariSpark is part of the kari ecosystem.
 
 ## 📜 License
 This library is licensed under the Apache License 2.0.
