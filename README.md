@@ -159,3 +159,12 @@ Options:
   -p, --programmer <PROGRAMMER>  [default: arduino]
   -h, --help                     Print help
   ```
+
+## 📜 License
+This library is licensed under the Apache License 2.0.
+See the full license here: [Apache-2.0 License.](https://opensource.org/licenses/Apache-2.0)
+
+## ✨ Author
+**Vincent Muriithi Karimi**  
+GitHub: [vincentmuriithi](https://github.com/vincentmuriithi)  
+Email: kari.clientdesk@gmail.com 
