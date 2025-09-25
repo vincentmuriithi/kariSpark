@@ -64,6 +64,7 @@ kari doctor
 
 ### kari init
 Used to generate **kari.toml** config file for use with **kariSpark**.  
+The ***kari.toml*** file is used to add configurations to your project or work instead of passing the parameters on the cli each time you run a given command.  
 Syntax:
 ```bash
 kari init
