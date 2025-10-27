@@ -24,8 +24,19 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 
 ## 🚀 Installation
 
-Download the latest release from the [GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases).  
-Add it to your system PATH to use `kariSpark` globally.
+### 🖥️ Desktop App (GUI)
+Download the latest `.msi` (Windows) installer from the  
+**[GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases)** page.
+
+Run the installer and launch **kariSpark** from your applications menu.
+
+---
+
+### 💻 CLI Version
+You can still use kariSpark as a command-line tool.
+
+1. Download the CLI binary from **[GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases)**
+2. Add the binary to your system `PATH` to use it globally
 
 Check installation:
 ```bash
