@@ -25,10 +25,34 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 ## 🚀 Installation
 
 ### 🖥️ Desktop App (GUI)
-Download the latest `.msi` (Windows) installer from the  
+Download the latest installer for your operating system from the  
 **[GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases)** page.
 
-Run the installer and launch **kariSpark** from your applications menu.
+| Platform | Installer Type | Suitable For | Download |
+|----------|----------------|--------------|---------------|
+| **<img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows** | `.msi` | All Windows 10/11 |[Download](https://github.com/vincentmuriithi/kariSpark/releases/latest/download/kariSpark.msi)
+| **🐧 Linux** | `.AppImage` | Most distros (portable, no install) |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark_1.0.0_amd64.AppImage)|
+| 🐧 **Linux** | `.deb` | Ubuntu / Debian / Mint |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark_1.0.0_amd64.deb)|
+| **🐧 Linux** | `.rpm` | Fedora / RHEL / CentOS / openSUSE |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark-1.0.0-1.x86_64.rpm)|
+
+#### <img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows
+Download the `.msi`, run it, and launch **kariSpark** from the start menu.
+
+#### 🐧 Linux – AppImage (portable)
+```bash
+chmod +x kariSpark_*.AppImage
+./kariSpark_*.AppImage
+```
+
+#### 🐧 Linux – Debian/Ubuntu (.deb)
+```bash
+sudo dpkg -i kariSpark_*.deb
+```
+
+#### 🐧 Linux – RPM-based (.rpm)
+```bash
+sudo rpm -i kariSpark-*.rpm
+```
 
 ---
 
