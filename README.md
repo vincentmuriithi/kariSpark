@@ -57,10 +57,22 @@ sudo rpm -i kariSpark-*.rpm
 ---
 
 ### 💻 CLI Version
-You can still use kariSpark as a command-line tool.
+You can still use kariSpark as a command-line tool on **Windows and Linux**.
 
+#### <img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows
 1. Download the CLI binary from **[GitHub Releases](https://github.com/vincentmuriithi/kariSpark/releases)**
 2. Add the binary to your system `PATH` to use it globally
+
+#### 🐧 Linux
+**Option A – Debian/Ubuntu (.deb)**
+```bash
+sudo dpkg -i kariSpark-cli_*.deb
+```
+**Option B – Manual binary**
+```bash
+# Download the CLI binary from GitHub Releases
+sudo mv kari /usr/local/bin/
+```
 
 Check installation:
 ```bash
