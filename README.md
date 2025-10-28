@@ -66,7 +66,7 @@ You can still use kariSpark as a command-line tool on **Windows and Linux**.
 #### 🐧 Linux
 **Option A – Debian/Ubuntu (.deb)**
 ```bash
-sudo dpkg -i kariSpark-cli_*.deb
+sudo dpkg -i kariSpark_CLI.deb
 ```
 **Option B – Manual binary**
 ```bash
