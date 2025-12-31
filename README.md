@@ -71,72 +71,72 @@ sudo dpkg -i kariSpark_CLI.deb
 **Option B – Manual binary**
 ```bash
 # Download the CLI binary from GitHub Releases
-sudo mv kari /usr/local/bin/
+sudo mv karispark /usr/local/bin/
 ```
 
 Check installation:
 ```bash
-kari --version
+karispark --version
 ```
 
 ## 🛠 Command Reference
 ```bash
 # Used for generating a kari.toml config file
-kari init
+karispark init
 
 # Used for detecting the available connected boards
-kari detect
+karispark detect
 
 # Used to upload the specified program
-kari upload port <options>
+karispark upload port <options>
 
 # Used to download a program from the specified board
-kari download port <options>
+karispark download port <options>
 
 # Used to transfer program between boards
-kari transfer <options>
+karispark transfer <options>
 
 # Used to verify the correctness and compare a saved program to one running in the given MCU
-kari verify <options>
+karispark verify <options>
 ```
 
 
 ## 🔨 Usage
-### kari doctor
+### karispark doctor
 Used to inspect your environment and install required dependencies to get you started on **kariSpark**.  
 Syntax:
 ```bash
-kari doctor
+karispark doctor
 ```
 
-### kari init
+### karispark init
 Used to generate **kari.toml** config file for use with **kariSpark**.  
 The ***kari.toml*** file is used to add configurations to your project or work instead of passing the parameters on the cli each time you run a given command.  
 Syntax:
 ```bash
-kari init
+karispark init
 ```
 
-### kari detect
+### karispark detect
 Used to detect the connected boards in your pc.  
 Syntax:
 ```bash
-kari detect
+karispark detect
 ```
 
-### kari upload
+### karispark upload
 Used to upload programs to connected boards. Requires the port to be specified when flashing to single board but also supports parallel flashing for uploading multiple boards.  
 For single board you use:
 ```bash
-kari upload port <options>
+karispark upload port <options>
 ```
 Example:
 ```bash
-kari upload COM3 --board uno --programmer arduino --dir . 
+karispark upload COM3 --board uno --programmer arduino --dir . 
 ```
 For multiple board uploading also known as parallel flashing is as:
 ```bash
-kari upload --parallel <options>
+karispark upload --parallel <options>
 ```
 In parallel flashing port is not needed and if you pass it it will be ignored. 
 This command usage is as follows:
@@ -151,17 +151,17 @@ Options:
   -h, --help                     Print help
   ```
 
-  ### kari download
+  ### karispark download
   Used to download programs to connected boards. Requires the port to be specified when downloading the program with an exception only when using usbasp as the programmer.
   It also allows for one to specify a directory where the downloaded program will be saved. If not saved it will be saved in the temp directory.
   
   Syntax:
   ```bash
-  kari download port <options>
+  karispark download port <options>
   ```
   Example:
   ```bash
-  kari /dev/ttyACM0 -b mega2560 --programmer arduino  -d "./downloaded_program"
+  karispark /dev/ttyACM0 -b mega2560 --programmer arduino  -d "./downloaded_program"
   ```
   This command usage is as follows:
   ```bash
@@ -175,7 +175,7 @@ Options:
   -h, --help                     Print help
   ```
 
-  ### kari transfer
+  ### karispark transfer
   This is the most powerful and unique feature of ***kariSpark***.
   It's used to transfer program between boards of same MCU architecture e.g atmega328 to atmega328. It requires the source port and target port to be specified when transferring programs between two boards.
 
@@ -185,19 +185,19 @@ Options:
 
   Two boards transfer signature is as follows:
   ```bash
-  kari transfer source_port target_port <options>
+  karispark transfer source_port target_port <options>
   ```
   Example:
   ```bash
-  kari transfer COM3 COM4 -b uno -p arduino 
+  karispark transfer COM3 COM4 -b uno -p arduino 
   ```
   In parallel transfer you only need specify the ***source_port*** only.
   ```bash
-  kari source_port --parallel <options>
+  karispark source_port --parallel <options>
   ```
   Example:
   ```bash
-  kari transfer COM14 --parallel --programmer arduino --board leonardo
+  karispark transfer COM14 --parallel --programmer arduino --board leonardo
   ```
 This command usage is as follows:
 ```bash
@@ -212,15 +212,15 @@ Options:
   -h, --help                     Print help
   ```
 
-### kari verify
+### karispark verify
 Used to verify the correctness of a program in a given microcontroller and also comparing if a given saved program file is same as one running in a given MCU.
 Syntax:
 ```bash
-kari verify port <options>
+karispark verify port <options>
 ```
 Example:
 ```bash
-kari verify COM15 -b attiny85 -p arduino --file ./saved_program.hex
+karispark verify COM15 -b attiny85 -p arduino --file ./saved_program.hex
 ```
 You also just pass a directory to file and it will automatically search in that directory for the saved program with the name ***temp_program.hex*** for AVR MCUs. If you don't give the path   or file it will check it in the temp directory.
 
@@ -260,6 +260,9 @@ All names on the left resolve to the canonical MCU on the right:
 ## 📜 License
 This library is licensed under the Apache License 2.0.
 See the full license here: [Apache-2.0 License.](https://opensource.org/licenses/Apache-2.0)
+
+## ⚖️ Trademark Notice
+kari and kariSpark are trademarks of Vincent Muriithi Karimi.
 
 ## ✨ Author
 **Vincent Muriithi Karimi**  
