@@ -1,0 +1,15 @@
+{
+  "version": "1.1.0",
+  "notes": "Initial release with flashing, transfer, and verification features",
+  "pub_date": "2026-06-19T23:10:48.476Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/karispark_1.1.0_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUU0xmd1VCSG1UN3c2aWhvKzc0bUdqaldPQzBXTmNqOXhGWmdvajFnRm5lY2hjUHlKTDhBbDZwcHRNOFk5NXlzanpXU1o2ajUzY1hTZ0tuMERPeVRRVjdKVkhpcUQ5VEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxODk1NTMwCWZpbGU6a2FyaVNwYXJrXzEuMS4wX3g2NF9lbi1VUy5tc2kKODlreEpjQnFLbWlRTHRFdFpYRVc0ZHNFOFZ3NFNvOWQ1SUphWkJja29oOUJTYndnSlkrcE5pc1dZdVo1RDBlL2Zzd01wZFp1RDlmajdjdzR4cFVCQmc9PQo="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark_1.1.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUU0xmd1VCSG1UNzlvWHpHOGZ1S3JYYlkyWk4vZVQ3MitNQmgvMmZtTHJvNjdxb3B1RStTU0cxemgvV0cwR2tKblEySXpiaUYyWTF3Z3V1TFM5VFdYeE9PVGJ0b1BmYXdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTEwNDM0CWZpbGU6a2FyaVNwYXJrXzEuMS4wX2FtZDY0LkFwcEltYWdlCnhwQnFvOVpEdG5aclcyOEEzTWRKS1pVc0J5a1ppWTJjNGVDakVNZWRyUmhwTnl1SjBkOEYzM3BLellOc082OGxyTy9mRFRIQTlDYVArY0M3THlld0RBPT0K"
+    }
+  }
+}
