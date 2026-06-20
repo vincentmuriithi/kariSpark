@@ -1,13 +1,15 @@
 # kariSpark ⚡
 
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Desktop Version](https://img.shields.io/badge/Desktop_version-1.1.0-blue)
+![CLI Version](https://img.shields.io/badge/CLI_version-1.0.0-blue)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
 **kariSpark** is a cross-platform desktop and CLI tool for downloading, uploading, and transferring programs between microcontrollers.  
 It is designed to make working with embedded devices simple and efficient.  
 
-Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560, etc.), with plans for broader MCU family support in the future.
+Currently, kariSpark CLI supports AVR-based MCUs (such as ATmega328P and ATmega2560).  
+kariSpark Desktop supports AVR-based MCUs and adds ESP32 support starting from version 1.1.0.
 
 ---
 
@@ -15,6 +17,8 @@ Currently, kariSpark supports **AVR-based MCUs** (such as ATmega328P, ATmega2560
 - 📥 **Download** programs from your MCU to your computer.  
 - 📤 **Upload** programs to your MCU (single or multiple boards in parallel).  
 - 🔄 **Transfer** programs directly between two MCUs.  
+- 🔁 **Swap** firmware between compatible MCUs of the same architecture (available in Desktop v1.1.0)
+- 🌐 **ESP32 Support** for flashing and verification workflows (Desktop v1.1.0)
 - ✅ **Verify** uploaded programs against a reference hex file.  
 - 🔍 **Detect** connected boards and available ports.  
 - 🛠️ **Doctor** mode to diagnose your environment.  
@@ -31,9 +35,9 @@ Download the latest installer for your operating system from the
 | Platform | Installer Type | Suitable For | Download |
 |----------|----------------|--------------|---------------|
 | **<img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows** | `.msi` | All Windows 10/11 |[Download](https://github.com/vincentmuriithi/kariSpark/releases/latest/download/kariSpark.msi)
-| **🐧 Linux** | `.AppImage` | Most distros (portable, no install) |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark_1.0.0_amd64.AppImage)|
-| 🐧 **Linux** | `.deb` | Ubuntu / Debian / Mint |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark_1.0.0_amd64.deb)|
-| **🐧 Linux** | `.rpm` | Fedora / RHEL / CentOS / openSUSE |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.0.0-gui/kariSpark-1.0.0-1.x86_64.rpm)|
+| **🐧 Linux** | `.AppImage` | Most distros (portable, no install) |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark_1.1.0_amd64.AppImage)|
+| 🐧 **Linux** | `.deb` | Ubuntu / Debian / Mint |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark_1.1.0_amd64.deb)|
+| **🐧 Linux** | `.rpm` | Fedora / RHEL / CentOS / openSUSE |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark-1.1.0-1.x86_64.rpm)|
 
 #### <img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows
 Download the `.msi`, run it, and launch **kariSpark** from the start menu.
@@ -99,6 +103,11 @@ karispark transfer <options>
 # Used to verify the correctness and compare a saved program to one running in the given MCU
 karispark verify <options>
 ```
+
+## 🔄 Updates
+kariSpark Desktop supports in-app updates.
+New versions can be installed directly from the application when available.  
+CLI releases are distributed separately through GitHub Releases.
 
 
 ## 🔨 Usage
@@ -258,7 +267,7 @@ All names on the left resolve to the canonical MCU on the right:
 
 
 ## 📜 License
-This library is licensed under the Apache License 2.0.
+This software is licensed under the Apache License 2.0.
 See the full license here: [Apache-2.0 License.](https://opensource.org/licenses/Apache-2.0)
 
 ## ⚖️ Trademark Notice
