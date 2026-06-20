@@ -34,7 +34,7 @@ Download the latest installer for your operating system from the
 
 | Platform | Installer Type | Suitable For | Download |
 |----------|----------------|--------------|---------------|
-| **<img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows** | `.msi` | All Windows 10/11 |[Download](https://github.com/vincentmuriithi/kariSpark/releases/latest/download/kariSpark_1.1.0_x64_en-US.msi)
+| **<img src="https://www.citypng.com/public/uploads/preview/windows-10-logo-icon-free-png-735811696612207vhxwa5iwgf.png" width=16> Windows** | `.msi` | All Windows 10/11 |[Download](https://github.com/vincentmuriithi/kariSpark/releases/latest/download/v1.1.0-gui/kariSpark_1.1.0_x64_en-US.msi)
 | **🐧 Linux** | `.AppImage` | Most distros (portable, no install) |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark_1.1.0_amd64.AppImage)|
 | 🐧 **Linux** | `.deb` | Ubuntu / Debian / Mint |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark_1.1.0_amd64.deb)|
 | **🐧 Linux** | `.rpm` | Fedora / RHEL / CentOS / openSUSE |[Download](https://github.com/vincentmuriithi/kariSpark/releases/download/v1.1.0-gui/kariSpark-1.1.0-1.x86_64.rpm)|
